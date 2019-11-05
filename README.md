@@ -38,14 +38,15 @@ Lectura de los datos desde el archivo:
 
 Convertir a una lista de tuplas de 5 elementos
 
-```
+```scala
 val data = lines.map(
    line => line.split(";") match { 
       case Array(a, b, c, d, e) => (a.trim, b.trim, c.trim, d.trim.toInt, e.trim) 
    })
 ```
 
-- Con los datos (valores en *data*) anteriores, responder a las siguiente preguntas:
+Con los datos (valores en *data*) anteriores, responder a las siguiente preguntas:
+
 - Presente en orden alfabético el nombre de los jugadores con más de 10 goles.
 - Presente el nombre de los jugadores con mas de 10 goles, esta vez ordenados de forma descendente por el número de goles marcados. Consulte sobre la función sortBy.
 - ¿A qué club pertenece el máximo goleador del campeonato?
