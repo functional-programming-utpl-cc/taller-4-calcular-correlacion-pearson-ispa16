@@ -45,7 +45,6 @@ val data = lines.map(
    })
 ```
 
-
 Con los datos (valores en *data*) anteriores, responder a las siguiente preguntas:
 
 - Presente en orden alfabético el nombre de los jugadores con más de 10 goles.
