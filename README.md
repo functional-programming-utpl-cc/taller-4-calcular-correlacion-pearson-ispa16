@@ -55,3 +55,20 @@ Con los datos (valores en *data*) anteriores, responder a las siguiente pregunta
 - ¿Cuál es la frecuencia de los goles marcados? (Cuántos jugadores tienen 1 gol, 2 goles, 3 goles, 4, goles, etc). Consultar groupBy y mapValues.
 - ¿Cuáles son los nombres de los jugadores que han marcado goles en más de un club?
 - ¿Cuáles son las nacionalidades y su frecuencia (número de veces que se repite) de los jugadores que han marcado más de 9?
+
+## Taller Nro. 4
+
+Calcular el coeficiente de correlación de Pearson para establecer si existe una relación entre el peso de una persona y su tensión sistólica.
+
+|Peso (Kg)| Tensión sistólica (mm Hg)|
+|---------|--------------------------|
+|72       |115                       |
+|76       |121                       |
+|78       |125                       |
+|81       |130                       |
+|89       |141                       |
+|95       |150                       |
+|108      |165                       |
+|115      |170                       |
+|120      |177                       |
+|130      |178                       |
