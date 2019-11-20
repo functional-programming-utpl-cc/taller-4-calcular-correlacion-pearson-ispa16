@@ -1,0 +1,14 @@
+//intento 1000
+
+val x2 = (a:List[(Int,Int)]) => a.map(x=>x._1*1.0)
+val y2 = (a:List[(Int,Int)]) => a.map(x=>x._2*1.0)
+
+//nuevas medias
+
+val mediav = (a:List[(Int,Int)]) => (x2(a).map(a=> a).sum /a.length).toFloat
+val mediav2 = (a:List[(Int,Int)]) => (y2(a).map(a=> a).sum /a.length).toFloat
+val x_marginal = (a:List[(Int,Int)])=> Math.sqrt(x2(a).map(x=>Math.pow(x,2)).sum/a.length - Math.pow(mediav(a),2) )    
+val y_marginal = (a:List[(Int,Int)])=> Math.sqrt(a.map(x=>Math.pow(x._2,2)).sum/a.length - Math.pow(mediav2(a),2))   
+val xpory = (a:List[(Int,Int)]) => (x2(a),y2(a)).zipped.map(_*_)
+val covarianza = (a:List[(Int,Int)]) =>((xpory(a)).sum / a.length) -mediav(a)*mediav2(a)
+val coef = (a:List[(Int,Int)]) => covarianza(a) / (x_marginal(a)*y_marginal(a))
